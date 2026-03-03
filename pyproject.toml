@@ -7,13 +7,12 @@ name = "pythonbeid"
 version = "0.2.0"
 description = "Un module pour lire les informations des cartes d'identité belges"
 readme = "README.md"
-license = { text = "MIT" }
+license = "MIT"
 authors = [{ name = "Fabien Toune", email = "fabien.toune@gmail.com" }]
 requires-python = ">=3.9"
 dependencies = ["pyscard"]
 classifiers = [
     "Programming Language :: Python :: 3",
-    "License :: OSI Approved :: MIT License",
     "Operating System :: OS Independent",
     "Topic :: Security",
     "Topic :: Software Development :: Libraries :: Python Modules",
@@ -24,7 +23,7 @@ Homepage = "https://github.com/Lapin-Blanc/pythonbeid"
 "Bug Tracker" = "https://github.com/Lapin-Blanc/pythonbeid/issues"
 
 [project.optional-dependencies]
-dev = ["pytest", "pytest-cov"]
+dev = ["pytest", "pytest-cov", "build", "twine"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
