@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pythonbeid"
+version = "0.2.0"
+description = "Un module pour lire les informations des cartes d'identité belges"
+readme = "README.md"
+license = { text = "MIT" }
+authors = [{ name = "Fabien Toune", email = "fabien.toune@gmail.com" }]
+requires-python = ">=3.9"
+dependencies = ["pyscard"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Topic :: Security",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+
+[project.urls]
+Homepage = "https://github.com/Lapin-Blanc/pythonbeid"
+"Bug Tracker" = "https://github.com/Lapin-Blanc/pythonbeid/issues"
+
+[project.optional-dependencies]
+dev = ["pytest", "pytest-cov"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
